@@ -44,15 +44,20 @@
 
         <div class="container px-4 px-lg-5 my-4">
             <div class="btn-group">
-                <button class="btn btn-outline-dark flex-shrink-0" type="button" data-section="graph1">
+                <button id="selected-btn" class="btn btn-outline-dark flex-shrink-0" type="button" data-section="graph1">
                     Rate of Victimizations by Crime Type
                 </button>
+                <script>
+                  document.addEventListener("DOMContentLoaded", function(event) {
+                    document.getElementById("selected-btn").click();
+                 });
+                </script>
             </div>
-            <div class="btn-group">
-                <button class="btn btn-outline-dark flex-shrink-0" type="button" data-section="graph2">
-                    Rate of Change in Violent Crime by U.S. State
-                </button>
-            </div>
+<!--            <div class="btn-group">-->
+<!--                <button class="btn btn-outline-dark flex-shrink-0" type="button" data-section="graph2">-->
+<!--                    Rate of Change in Violent Crime by U.S. State-->
+<!--                </button>-->
+<!--            </div>-->
             <div class="btn-group">
                 <button class="btn btn-outline-dark flex-shrink-0" type="button" data-section="graph3">
                     Death Rates for Homicide
